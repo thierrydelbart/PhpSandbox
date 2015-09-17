@@ -1,9 +1,9 @@
 <?php
-$app_name = "PeaceLabs";
+$app_name = "PhpSandbox";
 $contact_admin = "Se o problema persistir, por favor entre em contato atraves deste email %s"; 
 $site_url = site_url('');
 
-$lang['app_site_name'] = "PeaceLabs";
+$lang['app_site_name'] = "PhpSandbox";
 $lang['app_home'] = "Página Inicial";
 
 /**** Génériques */
