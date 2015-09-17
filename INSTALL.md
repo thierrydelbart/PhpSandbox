@@ -38,6 +38,12 @@ $ git update-index --assume-unchanged web/.htaccess
 2. Copy of the config files with server specific values like `database.php`, `email.php`, `custom.php` and `environment.php`
 3. Edit those files
 
+# Default configuration
+
+## Users
+
+Default admin account: admin@sand.box / 123456
+
 # Create Heroku app
 
 ```
