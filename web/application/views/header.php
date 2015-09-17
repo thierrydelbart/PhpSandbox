@@ -34,7 +34,7 @@
             <span class="icon-bar"></span>
           </button>
           <a href="/" id="logo">
-          	<h1>PeaceLabs</h1>
+          	<h1><?php echo lang('app_site_name'); ?></h1>
           	<h2 class="tsN fwR fsI show">Powered by #Thithi32</h2>
           </a>
         </div>
