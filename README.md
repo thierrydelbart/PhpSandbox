@@ -1,17 +1,14 @@
-# PeaceLabs
-This space is design to co-create PeaceLabs.co, platform that uses collaboration technologies, such as crowdsourcing and crowdfunding, to improve the chances of success of social, environmental and economic community projects.
-
-After several social projects developed, crowdfunded & executed over 2014 #CheerForPeace, a startup social enterprise, learned that crowdfunding successfully is a very difficult task & that this is especially true for social projects.
-
-So to solve this problem, in its latest iteration, the startup is now launching a new product called PeaceLabs, a platform for Peace Ambassadors to co-create projects in the sustainability & social responsibility arena with collaboration technologies for crowdsourcing the community's input while helping improve the success rate of crowdfunding "Peace Projects."
-
-https://youtu.be/wHIkLzUbwxA
-
-Welcome to PeaceLabs.co! We are happy to count on you and all Peace Ambassadors around the world to develop this community!
-
-General files at: https://drive.google.com/a/peacelabs.co/folderview?id=0B2fJ6Nq0nCZlfkZsQzJTZWVSc1ZucFJDQmxsN2EtRF9KYU9nMENPMzdEY25zTzAtTzhXNW8&usp=sharing
+#Php Sandbox
 
 # Configuration
+
+```
+git clone https://github.com/Thithi32/PhpSandbox.git
+mv PhpSandbox _yourapp_
+cd _yourapp_
+git remote rm origin
+composer install
+```
 
 ## Database
 
@@ -35,16 +32,18 @@ In that case, you may want to configure git so the `.htaccess` file doesn't appe
 $ git update-index --assume-unchanged web/.htaccess 
 ```
 
-
 ### Environment Configuration Directory
 
 1. Add a directory with the environment name in `web/application/config`
-2. Copy of the config files with server specific values like `database.php`, `email.php` and `environment.php`
+2. Copy of the config files with server specific values like `database.php`, `email.php`, `custom.php` and `environment.php`
 3. Edit those files
 
+# Create Heroku app
+heroku create _yourapp_
+heroku addons:create sendgrid:starter
+heroku addons:create cloudinary:starter
+heroku addons:create cleardb:ignite
 
-# Documentation
+heroku config (to get CLEARDB_DATABASE_URL with the following format: mysql://bc9d9481f31dc0:742c795f@us-cdbr-iron-east-02.cleardb.net/heroku_8051efbc2aadf43 )
 
-For more information about using PHP on Heroku, see these Dev Center articles:
 
-- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
