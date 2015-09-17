@@ -5,9 +5,9 @@
 # http://www.sequelpro.com/
 # http://code.google.com/p/sequel-pro/
 #
-# Hôte: us-cdbr-iron-east-02.cleardb.net (MySQL 5.5.42-log)
-# Base de données: heroku_8051efbc2aadf43
-# Temps de génération: 2015-08-27 19:06:40 +0000
+# Hôte: 127.0.0.1 (MySQL 5.6.10)
+# Base de données: phpsandbox
+# Temps de génération: 2015-09-17 14:25:54 +0000
 # ************************************************************
 
 
@@ -87,14 +87,14 @@ CREATE TABLE `user` (
   `dateupdate` datetime DEFAULT NULL,
   `status` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`, `avatar`, `bio`, `city`, `alias`, `roles`, `confirmation`, `dateadd`, `dateupdate`, `status`)
 VALUES
-	(1,'Admin','admin@legiscon.com',X'1464A86EAB99',NULL,NULL,NULL,'admin',1,NULL,NULL,NULL,1);
+	(1,'Admin','admin@sand.box',X'1464A86EAB99',NULL,'','','',1,NULL,'2015-09-17 12:22:12','2015-09-17 14:06:57',1);
 
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
