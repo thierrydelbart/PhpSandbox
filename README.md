@@ -1,6 +1,6 @@
-#Php Sandbox
+# Php Sandbox Configuration
 
-# Configuration
+## Installation
 
 ```
 git clone https://github.com/Thithi32/PhpSandbox.git
@@ -39,11 +39,16 @@ $ git update-index --assume-unchanged web/.htaccess
 3. Edit those files
 
 # Create Heroku app
+
+```
 heroku create _yourapp_
 heroku addons:create sendgrid:starter
 heroku addons:create cloudinary:starter
 heroku addons:create cleardb:ignite
+```
 
-heroku config (to get CLEARDB_DATABASE_URL with the following format: mysql://bc9d9481f31dc0:742c795f@us-cdbr-iron-east-02.cleardb.net/heroku_8051efbc2aadf43 )
+```
+heroku config (to get CLEARDB_DATABASE_URL with the following format: mysql://username:password@host/database then import database dump)
+```
 
 
